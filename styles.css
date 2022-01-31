@@ -1,0 +1,203 @@
+/*CSS Grid*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/background.png"); 
+    background-position: left bottom;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.parent {
+  display: grid;
+  width:100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  min-height: 0;  
+  min-width: 0; 
+  }
+  .div1 { 
+    grid-area: 1 / 1 / 2 / 5; 
+    background-color: #000000;
+    max-height: 57px;
+    min-height: 57px;
+    /*overflow: hidden;*/
+  }
+  .div2 { 
+    grid-area: 2 / 1 / 6 / 2; 
+    background-color:rgba(255, 255, 255, 0.85);
+  }
+  .div3 { 
+    grid-area: 2 / 4 / 6 / 5; 
+    background-color:rgba(255, 255, 255, 0.85);
+  }
+  .div4 { 
+    grid-area: 2 / 2 / 5 / 4; 
+    background-color:rgba(255, 255, 255, 0.85);
+  }
+  .div5 { 
+    grid-area: 5 / 2 / 6 / 4; 
+    background-color:rgba(255, 255, 255, 0.0);
+    min-height: 400px;
+    max-width: 550px;
+  }
+  .div6 {
+    grid-area: 2 / 1 / 6 / 5;
+  }
+  /*General Styling*/
+.image {
+  float:left;
+  height: 228px;
+  width: 228px;
+  margin: 15px;
+  margin-right: 10%;
+  border: 1px solid black;
+  transition: box-shadow .3s;
+}
+  .image:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.text {
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  margin: 15px;
+  text-align: justify;
+  min-height: 228px;
+}
+.text2 {
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  margin: 10px;
+  text-align: justify;
+  min-height: 228px;
+  max-width: 35%;
+  margin-right: 5px;
+  float: left;
+}
+.text3{
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  margin: 15px;
+  text-align: justify;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+.h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.8em;
+  margin: 3px;
+  padding-top:5px;
+  padding-left:10px;
+  font-weight: bold;
+}
+.video{
+  margin: 18px;
+  float: right;
+}
+.logo2{
+  max-width: 550px;
+  margin: 10px;
+  margin-top: 50px;
+}
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  font-family: 'Indie Flower', cursive;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  border:  2px solid #000000;
+  float: right;
+}
+.button1 {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  font-family: 'Indie Flower', cursive;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  border:  2px solid #000000;
+}
+.profileImage{
+  width:225px; 
+  border-radius:50%;
+  border: 4px solid #000000;
+  float: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 180px;
+  margin-left:50px;
+}
+/* JS projects styling */
+.eyes {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding-top: 25%;
+  text-align: center;
+  z-index: 10;
+}
+.eye {
+  width: 240px;
+  height: 120px;
+  background: #fff;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  position: relative;
+  overflow: hidden;
+  z-index: 11;
+}
+.ball {
+  width: 80px;
+  height: 80px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 12;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.map-overlay {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+}
+
+/* index.html images*/
+.frontEndLogo{
+  height: 135px; 
+  margin-top: -15px;
+}
+.mern{
+  height: 135px;
+  margin-right: 20px;
+  margin-top: -15px;
+}
